@@ -1,10 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ProblemSolvings
+namespace ProblemSolving.Sort
 {
     public class InsertionSort
     {
@@ -17,7 +13,7 @@ namespace ProblemSolvings
                 {
                     if (array[index] > array[nextElementIndex])
                     {
-                        swap(array, index, nextElementIndex);
+                        Swap(array, index, nextElementIndex);
                     }
                 }
 
@@ -26,16 +22,16 @@ namespace ProblemSolvings
             return array;
         }
 
-        private static void swap(int[] array, int index, int nextElementIndex)
+        private static void Swap(int[] array, int index, int nextElementIndex)
         {
             array[index] = array[index] + array[nextElementIndex];
             array[nextElementIndex] = array[index] - array[nextElementIndex];
             array[index] = array[index] - array[nextElementIndex];
-      
+
         }
 
-     
-     
+
+
 
     }
 }
