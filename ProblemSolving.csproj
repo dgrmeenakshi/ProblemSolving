@@ -47,10 +47,21 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Problems\Anagram.cs" />
+    <Compile Include="Problems\CharacterCounter.cs" />
+    <Compile Include="Problems\ArrayToDigit.cs" />
+    <Compile Include="Problems\LargestPallindromPrime.cs" />
     <Compile Include="Problems\CreateAndAddTwoLinkedList.cs" />
+    <Compile Include="Problems\HighestConsicutiveStringFinder.cs" />
+    <Compile Include="Problems\HighestRepeaterStringFinder.cs" />
+    <Compile Include="Problems\MissingElementFinder.cs" />
+    <Compile Include="Problems\PrimeFinder.cs" />
+    <Compile Include="Problems\RemoveRepeatedDigitsInNumber.cs" />
+    <Compile Include="Problems\StringSwapper.cs" />
+    <Compile Include="Problems\TopTwoNumbers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Search\BinarySearch.cs" />
+    <Compile Include="Sort\BubbleSort.cs" />
     <Compile Include="Sort\InsertionSort.cs" />
   </ItemGroup>
   <ItemGroup>

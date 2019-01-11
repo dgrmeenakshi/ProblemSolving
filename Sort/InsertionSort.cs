@@ -8,7 +8,7 @@ namespace ProblemSolvings
 {
     public class InsertionSort
     {
-        public void Sort(int[] array)
+        public static int[] Sort(int[] array)
         {
             int size = array.Length;
             for (int index = 0; index < size; index++)
@@ -21,7 +21,9 @@ namespace ProblemSolvings
                     }
                 }
 
-            } 
+            }
+
+            return array;
         }
 
         private static void swap(int[] array, int index, int nextElementIndex)
@@ -29,6 +31,7 @@ namespace ProblemSolvings
             array[index] = array[index] + array[nextElementIndex];
             array[nextElementIndex] = array[index] - array[nextElementIndex];
             array[index] = array[index] - array[nextElementIndex];
+      
         }
 
      

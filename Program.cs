@@ -1,15 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ProblemSolving.Problems;
+using ProblemSolving.Sort;
+using ProblemSolvings;
 
 namespace ProblemSolving
 {
-    class Program
+  public  class Program
     {
         static void Main(string[] args)
         {
+            HighestConsicutiveStringFinder obj = new HighestConsicutiveStringFinder();
+            obj.HighestConsecutiveString();
+            Console.ReadLine();
+
         }
     }
-}
+  }
+

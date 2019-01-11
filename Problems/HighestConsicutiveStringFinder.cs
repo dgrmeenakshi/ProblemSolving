@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ProblemSolving.Problems
 {
-    class HighestConsicutiveStringFinder
+   public class HighestConsicutiveStringFinder
     {
-        public static void HighestConsecutiveString()
+        public  void HighestConsecutiveString()
         {
             string s = "mmmazon i atooooo";
             int count = 1;
