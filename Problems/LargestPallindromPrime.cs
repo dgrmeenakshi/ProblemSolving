@@ -1,67 +1,16 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 
 
 namespace ProblemSolving.Problems
 {
-     public class LargestPallindromPrime
+    public class LargestPallindromPrime
     {
-
-        public int LargestPallindromPrimeinAnArray(int[] array)
-        {
-            int[] primes = PrimesinanArray(array);
-            int[] pallindroms = PallindromsInAnArray(primes);
-            int Max = 0;
-            for (int i = 0; i < pallindroms.Length; i++)
-            {
-                if (Max < pallindroms[i])
-                    Max = pallindroms[i];
-            }
-
-            return Max;
-        }
-
-        private int[] PrimesinanArray(int[] arr)
-        {
-          int[] tempArray = new int[5];
-           
-            for (int i = 0; i < arr.Length; i++)
-            {
-                bool isPrime = true;
-                for (int j = 2; j < 12; j++) // To Do use appropriate array
-                {
-                    if (arr[i] != j && arr[i] % j == 0)
-                    {
-                        isPrime = false;
-                        break;
-                    }
-                 }
-
-                if (isPrime)
-                    tempArray[i] = arr[i];
-            }
-
-            return tempArray;
-      }
-
-
-        private int[] PallindromsInAnArray(int[] arr)
-        {
-            int [] a = new int[5];// To Do - Optimize way to not use empty array
-            for (int i = 0; i < arr.Length; i++)
-            {
-                if (arr[i].Equals(Reverse(arr[i])))
-                {
-                    a[i] = arr[i];
-                }
-            }
-
-            return a;
-        }
-
-        private int Reverse(int v)
+        public static int Reverse(int v)
         {
             int rev = 0;
-            while (v>0)
+            while (v > 0)
             {
                 int mod = v % 10;
                 rev = rev * 10 + mod;
@@ -70,27 +19,38 @@ namespace ProblemSolving.Problems
 
             return rev;
         }
-
-        public int[] ReverseNumbersInanArray(int[] num)
+        private static IEnumerable<int> GetPrimesInArray(int[] arr)
         {
-            int [] arr = new int[5]; // To Do Find an optimize way to not use an empty array
-            
-            for (int i = 0; i < num.Length; i++)
+            for (int i = 0; i < arr.Length; i++)
             {
-                int rev = 0;
-                while (num[i] > 0)
+                bool isPrime = true;
+                for (int j = 2; j < arr[i] / 2; j++)
                 {
-                    int mod = num[i] % 10;
-                    rev = (rev * 10) + mod;
-                    num[i] = num[i] / 10;
+                    if (arr[i] != j && arr[i] % j == 0)
+                    {
+                        isPrime = false;
+                        break;
+                    }
                 }
-
-               arr[i] = rev;
+                if (isPrime)
+                    yield return arr[i];
             }
 
-            return arr;
-        }
 
-        
+        }
+        public static int LargestPallindromPrimeinAnArray(int[] array)
+        {
+            int max = 0;
+            IEnumerable<int> primes = GetPrimesInArray(array);
+            foreach (var prime in primes)
+            {
+                if (prime > max)
+                {
+                    max = prime;
+                }
+            }
+
+            return max;
+        }
     }
 }
