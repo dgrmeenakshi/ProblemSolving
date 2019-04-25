@@ -47,8 +47,11 @@
     <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
     <Compile Include="Problems\Anagram.cs" />
-    <Compile Include="Problems\CharacterCounter.cs" />
+    <Compile Include="Problems\CountOfCharactersInString.cs" />
     <Compile Include="Problems\ArrayToDigit.cs" />
+    <Compile Include="Problems\LargestPallindromicNumberInArray.cs" />
+    <Compile Include="Problems\CountPairsWithGivenSumInArray.cs" />
+    <Compile Include="Problems\LargestPairSumInUnSortedArray.cs" />
     <Compile Include="Problems\LargestPallindromPrime.cs" />
     <Compile Include="Problems\CreateAndAddTwoLinkedList.cs" />
     <Compile Include="Problems\HighestConsicutiveStringFinder.cs" />
@@ -56,6 +59,7 @@
     <Compile Include="Problems\MissingElementFinder.cs" />
     <Compile Include="Problems\PrimeFinder.cs" />
     <Compile Include="Problems\RemoveRepeatedDigitsInNumber.cs" />
+    <Compile Include="Problems\ReverseNumbersInArray.cs" />
     <Compile Include="Problems\StringSwapper.cs" />
     <Compile Include="Problems\TopTwoNumbers.cs" />
     <Compile Include="Program.cs" />
