@@ -49,6 +49,7 @@
     <Compile Include="Problems\Anagram.cs" />
     <Compile Include="Problems\CountOfCharactersInString.cs" />
     <Compile Include="Problems\ArrayToDigit.cs" />
+    <Compile Include="Problems\CountSubarraysProductLessThanK.cs" />
     <Compile Include="Problems\LargestPallindromicNumberInArray.cs" />
     <Compile Include="Problems\CountPairsWithGivenSumInArray.cs" />
     <Compile Include="Problems\LargestPairSumInUnSortedArray.cs" />
@@ -58,7 +59,8 @@
     <Compile Include="Problems\HighestRepeaterStringFinder.cs" />
     <Compile Include="Problems\MissingElementFinder.cs" />
     <Compile Include="Problems\PrimeFinder.cs" />
-    <Compile Include="Problems\RemoveRepeatedDigitsInNumber.cs" />
+    <Compile Include="Problems\RemoveDuplicatesFomArray.cs" />
+    <Compile Include="Problems\RemoveRepeatedDigitsInNumberAndConvertIntoChar.cs" />
     <Compile Include="Problems\ReverseNumbersInArray.cs" />
     <Compile Include="Problems\StringSwapper.cs" />
     <Compile Include="Problems\TopTwoNumbers.cs" />
