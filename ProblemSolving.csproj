@@ -59,6 +59,7 @@
     <Compile Include="Problems\HighestRepeaterStringFinder.cs" />
     <Compile Include="Problems\MissingElementFinder.cs" />
     <Compile Include="Problems\PrimeFinder.cs" />
+    <Compile Include="Problems\PrintTrianglePattern.cs" />
     <Compile Include="Problems\RemoveDuplicatesFomArray.cs" />
     <Compile Include="Problems\RemoveRepeatedDigitsInNumberAndConvertIntoChar.cs" />
     <Compile Include="Problems\ReverseNumbersInArray.cs" />
