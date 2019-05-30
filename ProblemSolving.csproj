@@ -64,6 +64,7 @@
     <Compile Include="Problems\PrintTrianglePattern.cs" />
     <Compile Include="Problems\RemoveDuplicatesFomArray.cs" />
     <Compile Include="Problems\RemoveRepeatedDigitsInNumberAndConvertIntoChar.cs" />
+    <Compile Include="Problems\ReverseAString.cs" />
     <Compile Include="Problems\ReverseNumbersInArray.cs" />
     <Compile Include="Problems\StringSwapper.cs" />
     <Compile Include="Problems\TopTwoNumbers.cs" />
