@@ -2,7 +2,7 @@
 
 namespace ProblemSolving.Problems
 {
-    public class PrimeFinder
+    public class PrimeFinder 
     {
         /* Find list of prime numbers between a given range**/
         bool isPrime = true;

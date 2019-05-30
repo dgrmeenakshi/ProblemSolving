@@ -1,12 +1,14 @@
 ﻿using System;
+using System.Collections;
+using System.Runtime.InteropServices;
 using ProblemSolving.Problems;
 using ProblemSolving.Sort;
 
 namespace ProblemSolving
 {
-  public  class Program
+    public class Program
     {
-      public  static void Main(string[] args)
+        public static void Main(string[] args)
         {
             //HighestConsicutiveStringFinder obj = new HighestConsicutiveStringFinder();
             //obj.HighestConsecutiveString();
@@ -23,15 +25,17 @@ namespace ProblemSolving
             //Console.WriteLine(CountPairsWithGivenSumInArray.GetCountAndPairsInArray(a,6));
 
             //Console.WriteLine(LargestPairSumInUnSortedArray.LargestPairSum(a));
-            int[] a = {4,1,2,3,1,2,3};
+            //    int[] a = { 1, 2, 3, 4 };
+            //int ad = CountSubarraysProductLessThanK.SubarrysCountProductLessThanK(a,10);
 
-            RemoveRepeatedDigitsInNumber.RemoveDuplicatesFromArray(a);
-
-
+            Matrix m = new Matrix();
+            int[,] arr = new int[3, 3];
+            m.EnterMatrixInts(3, 3, arr);
+            m.PrintMatrixDiagonaly(3,3,arr);
 
             Console.ReadLine();
 
         }
     }
-  }
+}
 
