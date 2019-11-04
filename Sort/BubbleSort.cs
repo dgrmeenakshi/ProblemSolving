@@ -1,31 +1,43 @@
-﻿using System;
+using System;
 
 namespace ProblemSolving.Sort
 {
-   public class BubbleSort
+    /// <summary>
+    /// Bubble Sort
+    /// Arranging the numbers in Ascending Order by Swapping the adjacent elements if they are in wrong order.
+    /// </summary>
+    public class BubbleSort
     {
         public void Sort(int[] input)
         {
-            int size = input.Length;
-            for (int k = 0; k < size - 1; k++)
+            int n = input.Length;
+            for (int i = 0; i < n - 1; i++)
             {
-                for (int i = 0; i < size - 2; i++)
+                for (int j = 0; j < n - 1 - i; j++)
                 {
-                    if (input[i] > input[i + 1])
+                    if (input[j] < input[j + 1])
                     {
-                        Swap(input, i, i+1);
+                        Swap(input, j, j + 1);
                     }
-                    
+
                 }
             }
-     
-        }
-
+            PrintArray(input);
+         }
         private static void Swap(int[] array, int index, int nextElementIndex)
         {
             array[index] = array[index] + array[nextElementIndex];
             array[nextElementIndex] = array[index] - array[nextElementIndex];
             array[index] = array[index] - array[nextElementIndex];
+
+        }
+
+        private void PrintArray(int[] arr)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i]);
+            }
         }
     }
 }
