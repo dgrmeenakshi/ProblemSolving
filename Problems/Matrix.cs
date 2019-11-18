@@ -1,51 +1,88 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProblemSolving.Problems
 {
     public class Matrix
     {
-        public int[,] EnterMatrixInts(int row, int col, int[,] arrInts)
+        // Prints the Absolute difference between the Left Diagonal and Right Diagonal of Matrix
+        public void EnterMatrixAndPrintDigonalAbsoluteDifference()
         {
-            for (int i = 0; i < row; i++)
-            {
-                for (int j = 0; j < col; j++)
-                {
-                    arrInts[i,j]= int.Parse(Console.ReadLine()+ "  ");
-                 
-                }
+            Console.WriteLine("Enter Rows");
+            int r = Convert.ToInt32(Console.ReadLine());
 
-                Console.WriteLine(" ");
+            Console.WriteLine("Enter Columns");
+            int c = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Enter First Matrix");
+            int[,] matrix1 = new int[r, c];
+
+            for (int i = 0; i < r; i++)
+            {
+                for (int j = 0; j < c; j++)
+                {
+                    matrix1[i, j] = Convert.ToInt32(Console.ReadLine());
+                }
             }
 
-            return arrInts;
+            PrintMatrix(r, c, matrix1);
+
+            var leftSum = AddLeftDigonal(r, c, matrix1);
+
+            var rightSum = RightDigonalSum(r, c, matrix1);
+
+
+            var abs = Math.Abs(leftSum - rightSum);
+            Console.WriteLine($"The Absolute Difference Between Left Diagonal and Right Diagonal is {abs} ");
         }
 
-        public void PrintMatrixDiagonaly(int row , int col, int[,] arrInts)
+        private static int RightDigonalSum(int r, int c, int[,] matrix1)
         {
-            for (int i = 0; i < row; i++)
+            int rightSum = 0;
+            for (int i = r - 1; i > -1; i--)
             {
-                for (int j = 0; j < col; j++)
+                for (int j = c - 1; j > -1; j--)
                 {
                     if (i == j)
                     {
-                        Console.WriteLine(arrInts[i,j] + " ");
+                        rightSum = rightSum + matrix1[i, j];
                     }
                 }
             }
+
+            return rightSum;
         }
 
-        public void PrintMatrixInOneLine()
+        private static int AddLeftDigonal(int r, int c, int[,] matrix1)
         {
+            Console.WriteLine("Add left diagonal ");
+            int leftSum = 0;
+            for (int i = 0; i < r; i++)
+            {
+                for (int j = 0; j < c; j++)
+                {
+                    if (i == j)
+                    {
 
+                        leftSum = leftSum + matrix1[i, j];
+                    }
+                }
+            }
+            return leftSum;
         }
 
-        public void PrintSpiralMatrix()
+        private static void PrintMatrix(int r, int c, int[,] matrix1)
         {
+            Console.WriteLine("Print Matrix");
+            for (int i = 0; i < r; i++)
+            {
+                for (int j = 0; j < c; j++)
+                {
+                    Console.Write(matrix1[i, j] + "\t");
+                }
 
+                Console.WriteLine();
+            }
         }
     }
 }
+
