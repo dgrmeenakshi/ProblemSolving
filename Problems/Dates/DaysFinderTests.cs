@@ -13,7 +13,7 @@ namespace ProblemSolving.Problems.Dates
         {
             DateTime startDate = new DateTime(2000, 01, 03);
             DateTime endDate = new DateTime(2010, 08, 04);
-            int result = daysFinder.GetNumberOfDays(startDate.ToString(), endDate.ToString());
+            int result = daysFinder.GetNumberOfDays(startDate, endDate);
             Assert.AreEqual(3866,result,"Number of days between two dates are incorrect ");
         }
 

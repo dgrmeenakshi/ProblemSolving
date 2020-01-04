@@ -16,18 +16,18 @@ namespace ProblemSolving.Problems.Dates
         }
 
 
-        public int GetNumberOfDays(string startDate, string endDate)
+        public int GetNumberOfDays(DateTime startDate, DateTime endDate)
         {
-            int startYear = Getyear(startDate);
-            int endYear = Getyear(endDate);
+            int startYear = Getyear(startDate.ToString());
+            int endYear = Getyear(endDate.ToString());
             int yearDays = GetNumberOfDaysInYearDifference(startYear, endYear);
 
-            int startMonth = GetMonth(startDate);
-            int endMonth = GetMonth(endDate);
+            int startMonth = GetMonth(startDate.ToString());
+            int endMonth = GetMonth(endDate.ToString());
             int monthsDays = GetNumberofDaysinMonthDifference(startMonth, endMonth, startYear);
 
-            int startDay = GetDay(startDate);
-            int endDay = GetDay(endDate);
+            int startDay = GetDay(startDate.ToString());
+            int endDay = GetDay(endDate.ToString());
             int days = GetNumberOfDaysInDaysDifference(startDay, endDay);
             return yearDays + monthsDays + days;
         }
