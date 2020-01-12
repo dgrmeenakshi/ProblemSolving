@@ -7,7 +7,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A1AAFC5F-FFD9-4D26-8B26-82348C6D2C4B}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>ProblemSolving</RootNamespace>
     <AssemblyName>ProblemSolving</AssemblyName>
@@ -60,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataStructures\Stack.cs" />
     <Compile Include="DesignPattern\FactoryDesignPattern.cs" />
     <Compile Include="DesignPattern\Singleton.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
@@ -106,6 +107,14 @@
     <None Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
     <None Include="obj\Debug\ProblemSolving.csprojResolveAssemblyReference.cache" />
     <None Include="packages.config" />
+    <None Include="packages\NUnit.3.12.0\.signature.p7s" />
+    <None Include="packages\NUnit.3.12.0\build\NUnit.props" />
+    <None Include="packages\NUnit.3.12.0\CHANGES.md" />
+    <None Include="packages\NUnit.3.12.0\NUnit.3.12.0.nupkg" />
+    <None Include="packages\NUnit3TestAdapter.3.16.0\.signature.p7s" />
+    <None Include="packages\NUnit3TestAdapter.3.16.0\build\net35\NUnit3TestAdapter.props" />
+    <None Include="packages\NUnit3TestAdapter.3.16.0\build\netcoreapp2.1\NUnit3TestAdapter.props" />
+    <None Include="packages\NUnit3TestAdapter.3.16.0\NUnit3TestAdapter.3.16.0.nupkg" />
   </ItemGroup>
   <ItemGroup>
     <Content Include=".gitignore" />
@@ -115,6 +124,32 @@
     <Content Include="obj\Debug\ProblemSolving.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\ProblemSolving.exe" />
     <Content Include="obj\Debug\ProblemSolving.pdb" />
+    <Content Include="packages\NUnit.3.12.0\lib\net35\nunit.framework.dll" />
+    <Content Include="packages\NUnit.3.12.0\lib\net35\nunit.framework.pdb" />
+    <Content Include="packages\NUnit.3.12.0\lib\net35\nunit.framework.xml" />
+    <Content Include="packages\NUnit.3.12.0\lib\net40\nunit.framework.dll" />
+    <Content Include="packages\NUnit.3.12.0\lib\net40\nunit.framework.pdb" />
+    <Content Include="packages\NUnit.3.12.0\lib\net40\nunit.framework.xml" />
+    <Content Include="packages\NUnit.3.12.0\lib\net45\nunit.framework.dll" />
+    <Content Include="packages\NUnit.3.12.0\lib\net45\nunit.framework.pdb" />
+    <Content Include="packages\NUnit.3.12.0\lib\net45\nunit.framework.xml" />
+    <Content Include="packages\NUnit.3.12.0\lib\netstandard1.4\nunit.framework.dll" />
+    <Content Include="packages\NUnit.3.12.0\lib\netstandard1.4\nunit.framework.pdb" />
+    <Content Include="packages\NUnit.3.12.0\lib\netstandard1.4\nunit.framework.xml" />
+    <Content Include="packages\NUnit.3.12.0\lib\netstandard2.0\nunit.framework.dll" />
+    <Content Include="packages\NUnit.3.12.0\lib\netstandard2.0\nunit.framework.pdb" />
+    <Content Include="packages\NUnit.3.12.0\lib\netstandard2.0\nunit.framework.xml" />
+    <Content Include="packages\NUnit.3.12.0\LICENSE.txt" />
+    <Content Include="packages\NUnit.3.12.0\NOTICES.txt" />
+    <Content Include="packages\NUnit3TestAdapter.3.16.0\build\net35\nunit.engine.api.dll" />
+    <Content Include="packages\NUnit3TestAdapter.3.16.0\build\net35\nunit.engine.dll" />
+    <Content Include="packages\NUnit3TestAdapter.3.16.0\build\net35\NUnit3.TestAdapter.dll" />
+    <Content Include="packages\NUnit3TestAdapter.3.16.0\build\net35\NUnit3.TestAdapter.pdb" />
+    <Content Include="packages\NUnit3TestAdapter.3.16.0\build\netcoreapp2.1\nunit.engine.api.dll" />
+    <Content Include="packages\NUnit3TestAdapter.3.16.0\build\netcoreapp2.1\nunit.engine.dll" />
+    <Content Include="packages\NUnit3TestAdapter.3.16.0\build\netcoreapp2.1\NUnit3.TestAdapter.dll" />
+    <Content Include="packages\NUnit3TestAdapter.3.16.0\build\netcoreapp2.1\NUnit3.TestAdapter.pdb" />
+    <Content Include="packages\NUnit3TestAdapter.3.16.0\LICENSE.txt" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="obj\Debug\TempPE\" />
