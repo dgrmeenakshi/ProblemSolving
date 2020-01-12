@@ -2,7 +2,7 @@
 
 namespace ProblemSolving.Problems
 {
-    public class TopTwoNumbersTwo
+    public class TopTwoNumbers
     {
         //first assign the value of l1 to l2 so that l1 can hold the first maximum value and l2 can hold the second maximum value
         public void FindTopTwoNumbers()
