@@ -60,6 +60,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataStructure\Stack\UserDefinedStack.cs" />
     <Compile Include="DesignPattern\FactoryDesignPattern.cs" />
     <Compile Include="DesignPattern\Singleton.cs" />
     <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
