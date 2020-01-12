@@ -8,7 +8,6 @@ namespace ProblemSolving.DataStructure.Stack
 {
     class UserDefinedStack
     {
-        private int _data;
         private int top = 0;
         private int defaultSize = 16;
         private int[] stackArray;
