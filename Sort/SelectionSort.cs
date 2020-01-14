@@ -3,10 +3,10 @@ using System;
 namespace ProblemSolving.Sort
 {
     /// <summary>
-    ///     Insertion Sort builds the final sorted array one item at a time.
+    ///     Selection Sort builds the final sorted array one item at a time.
     ///     Select the first element and compare with all the remaining elements in array, Swap if order is incorrect.
     /// </summary>
-    public class InsertionSort
+    public class SelectionSort
     {
         public static void Sort(int[] array)
         {
