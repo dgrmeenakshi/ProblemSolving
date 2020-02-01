@@ -106,6 +106,7 @@
     <Compile Include="Problems\ReverseAString.cs" />
     <Compile Include="Problems\ReverseNumbersInArray.cs" />
     <Compile Include="Problems\RightAndLeftShiftArays.cs" />
+    <Compile Include="Problems\SortDictionaryByKeyAndValue.cs" />
     <Compile Include="Problems\StringSwapper.cs" />
     <Compile Include="Problems\TopTwoNumbers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
